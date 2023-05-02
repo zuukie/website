@@ -288,9 +288,12 @@ main .testimonials .card .person img {
   border-radius: 50%;
 }
 main .contact {
+  height: 350px;
   position: relative;
   background-image: url("../img/contactbg-small.png");
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 main .contact .card {
   padding: 25px;
@@ -319,7 +322,7 @@ main .contact .card ul i {
   margin-right: 5px;
 }
 main .contact .card ul a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 main .contact .card ul a:hover {
@@ -533,6 +536,9 @@ footer h6 {
   }
   main .contact .card ul i {
     font-size: 1.4rem;
+  }
+  main .contact .card ul a {
+    color: black;
   }
   main .contact .card img {
     width: 15px;

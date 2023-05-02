@@ -298,9 +298,12 @@ main {
 		}
 	}
 	.contact {
+		height: 350px;
 		position: relative;
 		background-image: url("../img/contactbg-small.png");
 		background-size: cover;
+		display: flex;
+		align-items: center;
 		.card {
 			padding: 25px;
 			border-radius: 20px;
@@ -326,7 +329,7 @@ main {
 					margin-right: 5px;
 				}
 				a {
-					color: black;
+					color: rgb(255, 255, 255);
 					text-decoration: none;
 				}
 				a:hover {
@@ -552,6 +555,9 @@ footer {
 					font-size: 1.4rem;
 					i {
 						font-size: 1.4rem;
+					}
+					a {
+						color: black;
 					}
 				}
 				img {
