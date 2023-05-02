@@ -660,6 +660,7 @@ footer h6 {
     height: 700px;
   }
   main .contact .card {
+    padding: 40px;
     height: 350px;
     width: 500px;
   }
