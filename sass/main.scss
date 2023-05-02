@@ -1,0 +1,837 @@
+@use "./colors" as c;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	font-family: "DM Sans", sans-serif;
+	scroll-behavior: smooth;
+	scroll-padding-top: 120px;
+}
+
+.wrapper {
+	margin-right: auto; /* 1 */
+	margin-left: auto; /* 1 */
+
+	max-width: 1440px; /* 2 */
+}
+
+nav {
+	width: 100%;
+	height: 55px;
+	position: fixed !important;
+	z-index: 50;
+	box-shadow: 0px 0px 15px #333333;
+	a {
+		margin-right: 10px;
+		img {
+			width: 40px;
+			border-radius: 50%;
+		}
+	}
+	.flags {
+		display: flex;
+		img {
+			width: 20px;
+			margin-right: 10px;
+			border-radius: 0;
+		}
+	}
+}
+header {
+	height: 550px;
+	background-image: url("../img/headerbg-mobile.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	img {
+		display: none;
+	}
+	.text {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		text-shadow: 0.5px 0.5px 2px #181818;
+		.line {
+			position: relative;
+			bottom: 2px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 45px;
+			height: 5px;
+			background-color: #5b1cb2;
+		}
+		h1 {
+			font-size: 2.2rem;
+			text-align: center;
+			span {
+				color: c.$purple;
+			}
+		}
+		p {
+			margin-top: -5px;
+			text-align: center;
+		}
+		.icons {
+			margin-top: -5px;
+			text-align: center;
+			a {
+				font-size: 1.3rem;
+				padding: 3px;
+				color: white;
+				transition: color 0.2s;
+			}
+			a:hover {
+				color: c.$purple;
+			}
+		}
+	}
+}
+
+main {
+	.aboutme {
+		padding: 50px 10px;
+		display: flex;
+		flex-direction: row;
+		h2 {
+			text-align: center;
+			font-weight: 700;
+		}
+		p {
+			text-align: justify;
+		}
+		img {
+			display: none;
+			width: 100px;
+		}
+	}
+	.logos {
+		padding: 2rem;
+		.top,
+		.bottom {
+			display: flex;
+			flex-wrap: nowrap;
+		}
+		img {
+			margin: auto;
+			width: 90px;
+		}
+	}
+	.whyme {
+		margin: 80px 0;
+		padding: 0 20px;
+		text-align: center;
+		h2 {
+			margin-bottom: 3rem;
+			font-weight: 700;
+		}
+		hr {
+			margin: 20px 0;
+			width: 5rem;
+			position: relative;
+			left: 50%;
+			transform: translate(-50%);
+			color: black;
+		}
+		.column {
+			i {
+				margin-bottom: 1rem;
+				font-size: 2rem;
+			}
+		}
+	}
+	.offers {
+		padding: 10px;
+		h2 {
+			margin-bottom: 15px;
+			font-weight: 700;
+			text-align: center;
+		}
+		.cards {
+			h3 {
+				color: white;
+			}
+			p {
+				color: white;
+			}
+			.card {
+				height: 270px;
+				margin-bottom: 20px;
+				border-radius: 20px;
+				background-size: cover;
+				background-repeat: no-repeat;
+				transition: transform 0.2s, scale 0.2s;
+				.text {
+					position: absolute;
+					padding: 20px;
+					bottom: 0;
+					z-index: 2;
+					h3 {
+						font-weight: 700;
+					}
+					a {
+						color: white;
+						font-weight: 700;
+						text-decoration: none;
+						transition: text-decoration 0.2s;
+						i {
+							transition: transform 0.2s;
+						}
+					}
+					a:hover {
+						text-decoration: underline;
+					}
+					a:hover i {
+						transform: translateX(100%);
+					}
+				}
+				.shadow {
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					background: rgb(0, 0, 0);
+					background: linear-gradient(
+						180deg,
+						rgba(0, 0, 0, 1) 30%,
+						rgba(157, 23, 204, 1) 100%
+					);
+					border-radius: 15px;
+					opacity: 0.7;
+					z-index: 0;
+				}
+			}
+			.card:hover {
+				transform: translateY(-1.5%) scale(1.01);
+			}
+			.cardtrailer {
+				background-image: url("../img/Gigs/premiere-small.png");
+			}
+			.carddiscord {
+				background-image: url("../img/Gigs/discord-small.png");
+			}
+			.cardlogo {
+				background-image: url("../img/Gigs/logo-small.png");
+			}
+			.cardhosting {
+				background-image: url("../img/Gigs/hosting-small.jpg");
+			}
+		}
+	}
+	.testimonials {
+		margin: 80px 0;
+		text-align: center;
+		padding: 1rem;
+		h2 {
+			font-weight: 700;
+		}
+		a {
+			transition: color 0.2s;
+		}
+		a:hover {
+			color: c.$purple;
+		}
+		.card {
+			padding: 2rem;
+			margin-bottom: 10px;
+			border: none;
+			height: 20rem;
+			background-color: #f9f9ff;
+			text-align: left;
+			p {
+				font-size: 1.2rem;
+			}
+			.person {
+				position: absolute;
+				bottom: 2rem;
+				display: flex;
+				.name {
+					margin-left: 5px;
+					h3 {
+						font-size: 1.4rem;
+						font-weight: 500;
+						color: black;
+					}
+					h4 {
+						font-size: 1.1rem;
+						color: #8d8ba7;
+						font-weight: normal;
+					}
+				}
+				img {
+					height: 40px;
+					width: 40px;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+	.contact {
+		position: relative;
+		background-image: url("../img/contactbg-small.png");
+		background-size: cover;
+		.card {
+			padding: 25px;
+			border-radius: 20px;
+			background-color: transparent;
+			color: white;
+			h2 {
+				z-index: 10;
+			}
+			p {
+				z-index: 10;
+			}
+			ul {
+				margin-left: -20px;
+				list-style: none;
+				z-index: 10;
+				li {
+					margin-bottom: 2px;
+				}
+				i {
+					margin-right: 5px;
+				}
+				i.star {
+					color: gold;
+				}
+			}
+			img {
+				width: 10px;
+				margin-right: 3px;
+				border-radius: 50%;
+				z-index: 10;
+			}
+		}
+		.shadow {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+			background-color: #00000085;
+			z-index: 2;
+		}
+	}
+}
+
+footer {
+	position: relative;
+	height: 75px;
+	background-color: c.$footback;
+	color: c.$foottext;
+	h6 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		min-width: 300px;
+		font-size: 1rem;
+		font-weight: normal;
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) {
+	nav.navbar {
+		background-color: white !important;
+		div.container-fluid {
+			position: relative;
+			margin: 0 auto;
+			max-width: 1400px;
+			background-color: white !important;
+			div {
+				.navbar-nav {
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					font-size: 1.4rem;
+					.flags {
+						margin-left: 10px;
+						transform: translateY(-8%);
+						img {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	header {
+		position: relative;
+		margin: 0 auto;
+		background-image: url("");
+		max-width: 1900px;
+		img {
+			height: 450px;
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: -5;
+		}
+		.text {
+			color: black;
+			text-shadow: none;
+			.line {
+				margin-left: 60px;
+				left: 0;
+				transform: translate(0);
+			}
+			h1 {
+				margin-left: 60px;
+				text-align: left;
+			}
+			p {
+				margin-left: 60px;
+				text-align: left;
+			}
+			.icons {
+				margin-left: 60px;
+				text-align: left;
+				margin-top: -10px;
+				a {
+					color: black;
+				}
+			}
+		}
+	}
+	main {
+		.aboutme {
+			h2 {
+				font-size: 2.4rem;
+				margin-left: 20px;
+				text-align: left;
+			}
+			p {
+				font-size: 1.4rem;
+				margin-left: 20px;
+				text-align: left;
+			}
+			img {
+				display: block;
+				width: 200px;
+			}
+		}
+		.logos {
+			img {
+				width: 110px;
+			}
+		}
+		.whyme {
+			h2 {
+				font-size: 2.4rem;
+			}
+			.columns {
+				display: flex;
+				justify-content: center;
+				hr {
+					display: none;
+				}
+				.column {
+					max-width: 220px;
+				}
+			}
+		}
+		.offers {
+			padding: 0;
+			h2 {
+				font-size: 2.4rem;
+			}
+			.cards {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 20px;
+				.top,
+				.bottom {
+					display: flex;
+					justify-content: center;
+					gap: 20px;
+				}
+				.card {
+					width: 300px;
+					margin-bottom: 0;
+				}
+			}
+		}
+		.testimonials {
+			h2 {
+				font-size: 2.4rem;
+			}
+			p {
+				text-align: center;
+				font-size: 1.2rem;
+				max-width: 500px;
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
+			.reviews {
+				display: flex;
+				justify-content: center;
+				gap: 10px;
+				grid-template: 10px;
+				.card {
+					width: 300px;
+					p {
+						text-align: left;
+					}
+				}
+			}
+		}
+		.contact {
+			background-image: url("../img/contactbg.png");
+			height: 450px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.card {
+				margin-right: 400px;
+				width: 280px;
+				height: 300px;
+				background-color: #fff;
+				color: black;
+				z-index: 20;
+				h2 {
+					font-size: 2.4rem;
+				}
+				p {
+					font-size: 1.2rem;
+				}
+				ul {
+					margin-top: 15px;
+					font-size: 1.4rem;
+					i {
+						font-size: 1.4rem;
+					}
+				}
+				img {
+					width: 15px;
+					margin-left: -1px;
+				}
+			}
+			.shadow {
+				height: 450px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	header {
+		.text {
+			h1 {
+				margin-left: 60px;
+				font-size: 4rem;
+			}
+			p {
+				margin-left: 60px;
+				font-size: 1.8rem;
+			}
+			.line {
+				margin-left: 60px;
+				height: 7px;
+				width: 45px;
+			}
+			.icons {
+				margin-left: 60px;
+				a {
+					font-size: 2.2rem;
+				}
+			}
+		}
+	}
+	main {
+		.aboutme {
+			justify-content: center;
+			align-items: center;
+			h2 {
+				font-size: 3rem;
+			}
+			.text {
+				max-width: 550px;
+				margin-right: 150px;
+			}
+			img {
+				width: 275px;
+			}
+		}
+		.logos {
+			img {
+				width: 150px;
+			}
+		}
+		.whyme {
+			.columns {
+				gap: 20px;
+				.column {
+					width: 280px;
+					max-width: none;
+					h2 {
+						font-size: 1.8rem;
+					}
+					p {
+						font-size: 1.3rem;
+					}
+					i {
+						font-size: 2.8rem;
+					}
+				}
+			}
+		}
+		.offers {
+			.cards {
+				.card {
+					width: 350px;
+					height: 300px;
+					.text {
+						h3 {
+							font-size: 2.1rem;
+						}
+						p {
+							font-size: 1.2rem;
+						}
+						a {
+							font-size: 1.2rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	footer {
+		h6 {
+			font-size: 1rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	header {
+		height: 750px;
+		img {
+			height: 600px;
+		}
+	}
+	main {
+		.aboutme {
+			h2 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 1.6rem;
+			}
+			img {
+				width: 350px;
+			}
+		}
+		.logos {
+			margin: 20px auto;
+			max-width: 1200px;
+		}
+		.whyme {
+			h2 {
+				font-size: 3rem;
+			}
+		}
+		.offers {
+			h2 {
+				font-size: 3rem;
+			}
+		}
+		.testimonials {
+			h2 {
+				font-size: 3rem;
+			}
+			p {
+				font-size: 1.4rem;
+			}
+			.reviews {
+				.card {
+					height: 225px;
+					p {
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+		.contact {
+			height: 700px;
+			.card {
+				height: 350px;
+				width: 500px;
+				h2 {
+					font-size: 3.2rem;
+				}
+				p {
+					font-size: 1.6rem;
+				}
+				ul {
+					margin-top: 25px;
+					font-size: 1.6rem;
+				}
+			}
+			.shadow {
+				height: 700px;
+			}
+		}
+	}
+	footer {
+		h6 {
+			font-size: 1.3rem;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	header {
+		height: 900px;
+		.text {
+			margin-right: 450px;
+			h1 {
+				font-size: 4.6rem;
+			}
+			p {
+				font-size: 1.8rem;
+			}
+		}
+		img {
+			height: 775px;
+		}
+	}
+	main {
+		.aboutme {
+			.text {
+				margin-right: 250px;
+				max-width: 700px;
+			}
+			h2 {
+				font-size: 3.6rem;
+			}
+			p {
+				font-size: 1.8rem;
+			}
+			img {
+				width: 400px;
+			}
+		}
+		.logos {
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			gap: 80px;
+			.top,
+			.bottom {
+				gap: 80px;
+			}
+			img {
+				width: 150px;
+			}
+		}
+		.whyme {
+			margin: 180px 0;
+			h2 {
+				margin-bottom: 50px;
+				font-size: 3.6rem;
+			}
+			.columns {
+				gap: 100px;
+				.column {
+					h3 {
+						font-size: 2.4rem;
+					}
+					p {
+						font-size: 1.5rem;
+					}
+					i {
+						font-size: 3.8rem;
+					}
+				}
+			}
+		}
+		.offers {
+			h2 {
+				margin-bottom: 40px;
+				font-size: 3.6rem;
+			}
+			.cards {
+				.card {
+					width: 550px;
+					height: 500px;
+					.text {
+						padding: 50px;
+						h3 {
+							font-size: 2.8rem;
+						}
+						p {
+							font-size: 1.8rem;
+						}
+						a {
+							font-size: 1.8rem;
+						}
+					}
+				}
+			}
+		}
+		.testimonials {
+			margin: 150px 0;
+			h2 {
+				font-size: 3.6rem;
+			}
+			p {
+				max-width: none;
+				font-size: 1.8rem;
+			}
+			.reviews {
+				.card {
+					padding: 40px;
+					width: 390px;
+					height: 370px;
+					p {
+						font-size: 1.8rem;
+					}
+				}
+				.person {
+					bottom: 40px;
+					img {
+						width: 60px;
+						height: 60px;
+					}
+					.name {
+						margin-left: 15px;
+						h3 {
+							font-size: 1.8rem;
+						}
+						h4 {
+							font-size: 1.8rem;
+						}
+					}
+				}
+			}
+		}
+		.contact {
+			.card {
+				h2 {
+					font-size: 3.6rem;
+				}
+				p {
+					font-size: 1.8rem;
+				}
+				ul {
+					font-size: 1.8rem;
+					i {
+						font-size: 2rem;
+					}
+					img {
+						width: 22px;
+					}
+				}
+			}
+		}
+	}
+}
