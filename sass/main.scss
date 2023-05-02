@@ -13,19 +13,13 @@ html {
 	scroll-padding-top: 120px;
 }
 
-.wrapper {
-	margin-right: auto; /* 1 */
-	margin-left: auto; /* 1 */
-
-	max-width: 1440px; /* 2 */
-}
-
-nav {
+nav.navbar {
 	width: 100%;
 	height: 55px;
 	position: fixed !important;
 	z-index: 50;
 	box-shadow: 0px 0px 15px #333333;
+	background-color: white !important;
 	a {
 		margin-right: 10px;
 		img {
@@ -41,9 +35,23 @@ nav {
 			border-radius: 0;
 		}
 	}
+	div.container-fluid {
+		.navbar-nav {
+			width: 100vw;
+			margin-left: -8px;
+			font-size: 1.2rem;
+			background-color: white;
+			a {
+				margin-left: 15px;
+			}
+			a.first {
+				margin-top: 10px;
+			}
+		}
+	}
 }
 header {
-	height: 550px;
+	height: 675px;
 	background-image: url("../img/headerbg-mobile.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -68,7 +76,7 @@ header {
 			background-color: #5b1cb2;
 		}
 		h1 {
-			font-size: 2.2rem;
+			font-size: 2.6rem;
 			text-align: center;
 			span {
 				color: c.$purple;
@@ -77,12 +85,13 @@ header {
 		p {
 			margin-top: -5px;
 			text-align: center;
+			font-size: 1.2rem;
 		}
 		.icons {
 			margin-top: -5px;
 			text-align: center;
 			a {
-				font-size: 1.3rem;
+				font-size: 1.8rem;
 				padding: 3px;
 				color: white;
 				transition: color 0.2s;
@@ -96,15 +105,17 @@ header {
 
 main {
 	.aboutme {
-		padding: 50px 10px;
+		padding: 50px 20px;
 		display: flex;
 		flex-direction: row;
 		h2 {
 			text-align: center;
 			font-weight: 700;
+			font-size: 2rem;
 		}
 		p {
 			text-align: justify;
+			font-size: 1.3rem;
 		}
 		img {
 			display: none;
@@ -130,6 +141,7 @@ main {
 		h2 {
 			margin-bottom: 3rem;
 			font-weight: 700;
+			font-size: 2rem;
 		}
 		hr {
 			margin: 20px 0;
@@ -140,9 +152,15 @@ main {
 			color: black;
 		}
 		.column {
+			h3 {
+				font-size: 1.8rem;
+			}
+			p {
+				font-size: 1.2rem;
+			}
 			i {
 				margin-bottom: 1rem;
-				font-size: 2rem;
+				font-size: 2.4rem;
 			}
 		}
 	}
@@ -152,13 +170,16 @@ main {
 			margin-bottom: 15px;
 			font-weight: 700;
 			text-align: center;
+			font-size: 2rem;
 		}
 		.cards {
 			h3 {
 				color: white;
+				font-size: 1.8rem;
 			}
 			p {
 				color: white;
+				font-size: 1.2rem;
 			}
 			.card {
 				height: 270px;
@@ -177,6 +198,7 @@ main {
 					}
 					a {
 						color: white;
+						font-size: 1.2rem;
 						font-weight: 700;
 						text-decoration: none;
 						transition: text-decoration 0.2s;
@@ -229,6 +251,10 @@ main {
 		padding: 1rem;
 		h2 {
 			font-weight: 700;
+			font-size: 2rem;
+		}
+		p {
+			font-size: 1.2rem;
 		}
 		a {
 			transition: color 0.2s;
@@ -282,26 +308,36 @@ main {
 			color: white;
 			h2 {
 				z-index: 10;
+				font-size: 2rem;
 			}
 			p {
+				font-size: 1.2rem;
 				z-index: 10;
 			}
 			ul {
 				margin-left: -20px;
 				list-style: none;
 				z-index: 10;
+				font-size: 1.2rem;
 				li {
 					margin-bottom: 2px;
 				}
 				i {
 					margin-right: 5px;
 				}
+				a {
+					color: black;
+					text-decoration: none;
+				}
+				a:hover {
+					text-decoration: underline;
+				}
 				i.star {
 					color: gold;
 				}
 			}
 			img {
-				width: 10px;
+				width: 12px;
 				margin-right: 3px;
 				border-radius: 50%;
 				z-index: 10;
@@ -313,7 +349,7 @@ main {
 			left: 0px;
 			width: 100%;
 			height: 100%;
-			background-color: #00000085;
+			background-color: #000000ad;
 			z-index: 2;
 		}
 	}
@@ -351,6 +387,14 @@ footer {
 					top: 50%;
 					transform: translateY(-50%);
 					font-size: 1.4rem;
+					width: unset;
+					margin-left: unset;
+					a {
+						margin-left: 15px;
+					}
+					a.first {
+						margin-top: 0;
+					}
 					.flags {
 						margin-left: 10px;
 						transform: translateY(-8%);
