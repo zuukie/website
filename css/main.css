@@ -23,6 +23,7 @@ nav.navbar a {
   margin-right: 10px;
 }
 nav.navbar a img {
+  height: 40px;
   width: 40px;
   border-radius: 50%;
 }
@@ -30,6 +31,7 @@ nav.navbar .flags {
   display: flex;
 }
 nav.navbar .flags img {
+  height: 20px;
   width: 20px;
   margin-right: 10px;
   border-radius: 0;
@@ -49,7 +51,7 @@ nav.navbar div.container-fluid .navbar-nav a.first {
 
 header {
   height: 675px;
-  background-image: url("../img/headerbg-mobile.png");
+  background-image: url("../img/headerbg-mobile.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -75,7 +77,7 @@ header .text .line {
   background-color: #5b1cb2;
 }
 header .text h1 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   text-align: center;
 }
 header .text h1 span {
@@ -84,15 +86,15 @@ header .text h1 span {
 header .text p {
   margin-top: -5px;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 header .text .icons {
   margin-top: -5px;
   text-align: center;
 }
 header .text .icons a {
-  font-size: 1.8rem;
-  padding: 3px;
+  font-size: 2.2rem;
+  padding: 6px;
   color: white;
   transition: color 0.2s;
 }
@@ -108,11 +110,11 @@ main .aboutme {
 main .aboutme h2 {
   text-align: center;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 main .aboutme p {
   text-align: justify;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 main .aboutme img {
   display: none;
@@ -138,7 +140,7 @@ main .whyme {
 main .whyme h2 {
   margin-bottom: 3rem;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 main .whyme hr {
   margin: 20px 0;
@@ -149,14 +151,14 @@ main .whyme hr {
   color: black;
 }
 main .whyme .column h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 main .whyme .column p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 main .whyme .column i {
   margin-bottom: 1rem;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
 }
 main .offers {
   padding: 10px;
@@ -165,15 +167,15 @@ main .offers h2 {
   margin-bottom: 15px;
   font-weight: 700;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 main .offers .cards h3 {
   color: white;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 main .offers .cards p {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 main .offers .cards .card {
   height: 270px;
@@ -194,7 +196,7 @@ main .offers .cards .card .text h3 {
 }
 main .offers .cards .card .text a {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-decoration: none;
   transition: -webkit-text-decoration 0.2s;
@@ -224,16 +226,16 @@ main .offers .cards .card:hover {
   transform: translateY(-1.5%) scale(1.01);
 }
 main .offers .cards .cardtrailer {
-  background-image: url("../img/Gigs/premiere-small.png");
+  background-image: url("../img/Gigs/premiere.webp");
 }
 main .offers .cards .carddiscord {
-  background-image: url("../img/Gigs/discord-small.png");
+  background-image: url("../img/Gigs/discord.webp");
 }
 main .offers .cards .cardlogo {
-  background-image: url("../img/Gigs/logo-small.png");
+  background-image: url("../img/Gigs/logo.webp");
 }
 main .offers .cards .cardhosting {
-  background-image: url("../img/Gigs/hosting-small.jpg");
+  background-image: url("../img/Gigs/hosting.webp");
 }
 main .testimonials {
   margin: 80px 0;
@@ -242,10 +244,10 @@ main .testimonials {
 }
 main .testimonials h2 {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 main .testimonials p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 main .testimonials a {
   transition: color 0.2s;
@@ -258,11 +260,11 @@ main .testimonials .card {
   margin-bottom: 10px;
   border: none;
   height: 20rem;
-  background-color: #f9f9ff;
+  background-color: #ece8f1;
   text-align: left;
 }
 main .testimonials .card p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 main .testimonials .card .person {
   position: absolute;
@@ -278,8 +280,8 @@ main .testimonials .card .person .name h3 {
   color: black;
 }
 main .testimonials .card .person .name h4 {
-  font-size: 1.1rem;
-  color: #8d8ba7;
+  font-size: 1.2rem;
+  color: rgb(106, 103, 103);
   font-weight: normal;
 }
 main .testimonials .card .person img {
@@ -290,7 +292,7 @@ main .testimonials .card .person img {
 main .contact {
   height: 350px;
   position: relative;
-  background-image: url("../img/contactbg-small.png");
+  background-image: url("../img/contactbg-small.webp");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -303,17 +305,17 @@ main .contact .card {
 }
 main .contact .card h2 {
   z-index: 10;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 main .contact .card p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   z-index: 10;
 }
 main .contact .card ul {
   margin-left: -20px;
   list-style: none;
   z-index: 10;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 main .contact .card ul li {
   margin-bottom: 2px;
@@ -332,7 +334,7 @@ main .contact .card ul i.star {
   color: gold;
 }
 main .contact .card img {
-  width: 12px;
+  width: 15px;
   margin-right: 3px;
   border-radius: 50%;
   z-index: 10;
@@ -353,13 +355,13 @@ footer {
   background-color: #070609;
   color: #9795B5;
 }
-footer h6 {
+footer p {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   min-width: 300px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: normal;
   text-align: center;
 }
@@ -510,7 +512,7 @@ footer h6 {
     text-align: left;
   }
   main .contact {
-    background-image: url("../img/contactbg.png");
+    background-image: url("../img/contactbg.webp");
     height: 450px;
     display: flex;
     justify-content: center;
@@ -614,8 +616,8 @@ footer h6 {
   main .offers .cards .card .text a {
     font-size: 1.2rem;
   }
-  footer h6 {
-    font-size: 1rem;
+  footer p {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 1200px) {
@@ -677,8 +679,8 @@ footer h6 {
   main .contact .shadow {
     height: 700px;
   }
-  footer h6 {
-    font-size: 1.3rem;
+  footer p {
+    font-size: 1.6rem !important;
   }
 }
 @media (min-width: 1440px) {
@@ -693,6 +695,12 @@ footer h6 {
   }
   header .text p {
     font-size: 1.8rem;
+  }
+  header .text .icons {
+    margin-top: 5px;
+  }
+  header .text .icons i {
+    font-size: 2.8rem;
   }
   header img {
     height: 775px;
@@ -809,6 +817,7 @@ footer h6 {
     font-size: 2rem;
   }
   main .contact .card ul img {
+    height: 22px;
     width: 22px;
   }
 }/*# sourceMappingURL=main.css.map */

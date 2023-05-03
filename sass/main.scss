@@ -23,6 +23,7 @@ nav.navbar {
 	a {
 		margin-right: 10px;
 		img {
+			height: 40px;
 			width: 40px;
 			border-radius: 50%;
 		}
@@ -30,6 +31,7 @@ nav.navbar {
 	.flags {
 		display: flex;
 		img {
+			height: 20px;
 			width: 20px;
 			margin-right: 10px;
 			border-radius: 0;
@@ -52,7 +54,7 @@ nav.navbar {
 }
 header {
 	height: 675px;
-	background-image: url("../img/headerbg-mobile.png");
+	background-image: url("../img/headerbg-mobile.webp");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -76,7 +78,7 @@ header {
 			background-color: #5b1cb2;
 		}
 		h1 {
-			font-size: 2.6rem;
+			font-size: 3rem;
 			text-align: center;
 			span {
 				color: c.$purple;
@@ -85,14 +87,14 @@ header {
 		p {
 			margin-top: -5px;
 			text-align: center;
-			font-size: 1.2rem;
+			font-size: 1.4rem;
 		}
 		.icons {
 			margin-top: -5px;
 			text-align: center;
 			a {
-				font-size: 1.8rem;
-				padding: 3px;
+				font-size: 2.2rem;
+				padding: 6px;
 				color: white;
 				transition: color 0.2s;
 			}
@@ -111,11 +113,11 @@ main {
 		h2 {
 			text-align: center;
 			font-weight: 700;
-			font-size: 2rem;
+			font-size: 2.4rem;
 		}
 		p {
 			text-align: justify;
-			font-size: 1.3rem;
+			font-size: 1.4rem;
 		}
 		img {
 			display: none;
@@ -141,7 +143,7 @@ main {
 		h2 {
 			margin-bottom: 3rem;
 			font-weight: 700;
-			font-size: 2rem;
+			font-size: 2.4rem;
 		}
 		hr {
 			margin: 20px 0;
@@ -153,14 +155,14 @@ main {
 		}
 		.column {
 			h3 {
-				font-size: 1.8rem;
+				font-size: 2rem;
 			}
 			p {
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 			}
 			i {
 				margin-bottom: 1rem;
-				font-size: 2.4rem;
+				font-size: 2.6rem;
 			}
 		}
 	}
@@ -170,16 +172,16 @@ main {
 			margin-bottom: 15px;
 			font-weight: 700;
 			text-align: center;
-			font-size: 2rem;
+			font-size: 2.4rem;
 		}
 		.cards {
 			h3 {
 				color: white;
-				font-size: 1.8rem;
+				font-size: 2rem;
 			}
 			p {
 				color: white;
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 			}
 			.card {
 				height: 270px;
@@ -198,7 +200,7 @@ main {
 					}
 					a {
 						color: white;
-						font-size: 1.2rem;
+						font-size: 1.4rem;
 						font-weight: 700;
 						text-decoration: none;
 						transition: text-decoration 0.2s;
@@ -232,16 +234,16 @@ main {
 				transform: translateY(-1.5%) scale(1.01);
 			}
 			.cardtrailer {
-				background-image: url("../img/Gigs/premiere-small.png");
+				background-image: url("../img/Gigs/premiere.webp");
 			}
 			.carddiscord {
-				background-image: url("../img/Gigs/discord-small.png");
+				background-image: url("../img/Gigs/discord.webp");
 			}
 			.cardlogo {
-				background-image: url("../img/Gigs/logo-small.png");
+				background-image: url("../img/Gigs/logo.webp");
 			}
 			.cardhosting {
-				background-image: url("../img/Gigs/hosting-small.jpg");
+				background-image: url("../img/Gigs/hosting.webp");
 			}
 		}
 	}
@@ -251,10 +253,10 @@ main {
 		padding: 1rem;
 		h2 {
 			font-weight: 700;
-			font-size: 2rem;
+			font-size: 2.4rem;
 		}
 		p {
-			font-size: 1.2rem;
+			font-size: 1.4rem;
 		}
 		a {
 			transition: color 0.2s;
@@ -267,10 +269,10 @@ main {
 			margin-bottom: 10px;
 			border: none;
 			height: 20rem;
-			background-color: #f9f9ff;
+			background-color: #ece8f1;
 			text-align: left;
 			p {
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 			}
 			.person {
 				position: absolute;
@@ -284,8 +286,8 @@ main {
 						color: black;
 					}
 					h4 {
-						font-size: 1.1rem;
-						color: #8d8ba7;
+						font-size: 1.2rem;
+						color: rgba(106, 103, 103, 1);
 						font-weight: normal;
 					}
 				}
@@ -300,7 +302,7 @@ main {
 	.contact {
 		height: 350px;
 		position: relative;
-		background-image: url("../img/contactbg-small.png");
+		background-image: url("../img/contactbg-small.webp");
 		background-size: cover;
 		display: flex;
 		align-items: center;
@@ -311,17 +313,17 @@ main {
 			color: white;
 			h2 {
 				z-index: 10;
-				font-size: 2rem;
+				font-size: 2.4rem;
 			}
 			p {
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 				z-index: 10;
 			}
 			ul {
 				margin-left: -20px;
 				list-style: none;
 				z-index: 10;
-				font-size: 1.2rem;
+				font-size: 1.4rem;
 				li {
 					margin-bottom: 2px;
 				}
@@ -340,7 +342,7 @@ main {
 				}
 			}
 			img {
-				width: 12px;
+				width: 15px;
 				margin-right: 3px;
 				border-radius: 50%;
 				z-index: 10;
@@ -363,13 +365,13 @@ footer {
 	height: 75px;
 	background-color: c.$footback;
 	color: c.$foottext;
-	h6 {
+	p {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		min-width: 300px;
-		font-size: 1rem;
+		font-size: 1.2rem;
 		font-weight: normal;
 		text-align: center;
 	}
@@ -532,7 +534,7 @@ footer {
 			}
 		}
 		.contact {
-			background-image: url("../img/contactbg.png");
+			background-image: url("../img/contactbg.webp");
 			height: 450px;
 			display: flex;
 			justify-content: center;
@@ -655,8 +657,8 @@ footer {
 		}
 	}
 	footer {
-		h6 {
-			font-size: 1rem;
+		p {
+			font-size: 1.2rem;
 		}
 	}
 }
@@ -733,8 +735,8 @@ footer {
 		}
 	}
 	footer {
-		h6 {
-			font-size: 1.3rem;
+		p {
+			font-size: 1.6rem !important;
 		}
 	}
 }
@@ -749,6 +751,12 @@ footer {
 			}
 			p {
 				font-size: 1.8rem;
+			}
+			.icons {
+				margin-top: 5px;
+				i {
+					font-size: 2.8rem;
+				}
 			}
 		}
 		img {
@@ -879,6 +887,7 @@ footer {
 						font-size: 2rem;
 					}
 					img {
+						height: 22px;
 						width: 22px;
 					}
 				}
